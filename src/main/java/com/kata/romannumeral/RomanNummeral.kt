@@ -19,6 +19,11 @@ class RomanNummeral {
         if (arabicNumber == 5) {
             return "V";
         }
+
+        if (arabicNumber == 6) {
+            return "VI";
+        }
+
         return "I" + romanNummeral;
     }
 }
