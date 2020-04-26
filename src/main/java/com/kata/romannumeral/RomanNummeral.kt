@@ -13,7 +13,7 @@ class RomanNummeral {
 
         var romanNummeral = getRomanNumeral(arabicNumber - 1)
         if (arabicNumber == 4) {
-            romanNummeral = "IV";
+            romanNummeral = "V";
         }
 
         if (arabicNumber == 5) {
