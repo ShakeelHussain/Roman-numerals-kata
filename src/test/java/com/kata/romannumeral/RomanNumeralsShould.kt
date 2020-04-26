@@ -29,5 +29,11 @@ class RomanNumeralsShould {
         Assert.assertEquals("IV", romanNummeral.convert(arabicNumber = 4))
     }
 
+    @Test
+    fun `given 5 shoud return IV in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("V", romanNummeral.convert(arabicNumber = 5))
+    }
+
 
 }
