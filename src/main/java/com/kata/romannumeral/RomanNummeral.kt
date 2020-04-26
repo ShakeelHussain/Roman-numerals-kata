@@ -5,6 +5,9 @@ class RomanNummeral {
         if (arabicNumber.equals(2)) {
             return "II";
         }
+        if (arabicNumber.equals(3)) {
+            return "III";
+        }
         return "I";
     }
 }
