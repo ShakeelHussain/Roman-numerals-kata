@@ -2,12 +2,14 @@ package com.kata.romannumeral
 
 class RomanNummeral {
     fun convert(arabicNumber: Int): String {
-        if (arabicNumber.equals(2)) {
-            return "II";
+        return getRomanNumeral(arabicNumber)
+    }
+
+    private fun getRomanNumeral(arabicNumber: Int): String {
+        if (arabicNumber == 1) {
+            return "I";
         }
-        if (arabicNumber.equals(3)) {
-            return "III";
-        }
-        return "I";
+        val romanNummeral = getRomanNumeral(arabicNumber - 1)
+        return "I" + romanNummeral;
     }
 }
