@@ -10,15 +10,15 @@ class RomanNummeral {
         if (arabicNumber == 1) {
             return "I";
         }
+
+        var romanNummeral = getRomanNumeral(arabicNumber - 1)
         if (arabicNumber == 4) {
-            return "IV";
+            romanNummeral = "IV";
         }
 
         if (arabicNumber == 5) {
             return "V";
         }
-
-        val romanNummeral = getRomanNumeral(arabicNumber - 1)
         return "I" + romanNummeral;
     }
 }
