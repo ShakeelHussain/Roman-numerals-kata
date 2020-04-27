@@ -30,7 +30,7 @@ class RomanNumeralsShould {
     }
 
     @Test
-    fun `given 5 shoud return IV in roman`() {
+    fun `given 5 shoud return V in roman`() {
         val romanNummeral: RomanNummeral = RomanNummeral();
         Assert.assertEquals("V", romanNummeral.convert(arabicNumber = 5))
     }
@@ -40,6 +40,13 @@ class RomanNumeralsShould {
         val romanNummeral: RomanNummeral = RomanNummeral();
         Assert.assertEquals("VI", romanNummeral.convert(arabicNumber = 6))
     }
+
+    @Test
+    fun `given 7 shoud return VII in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("VII", romanNummeral.convert(arabicNumber = 7))
+    }
+
 
 
 }
