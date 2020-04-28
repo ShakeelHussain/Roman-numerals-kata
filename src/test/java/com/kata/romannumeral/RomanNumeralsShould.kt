@@ -23,8 +23,6 @@ class RomanNumeralsShould {
         Assert.assertEquals("III", romanNummeral.convert(arabicNumber = 3))
     }
 
-
-
     @Test
     fun `given 4 should return IV in roman`() {
         val romanNummeral: RomanNummeral = RomanNummeral();
@@ -32,8 +30,26 @@ class RomanNumeralsShould {
     }
 
     @Test
-    fun `given 5 should return IV in roman`() {
+    fun `given 5 should return V in roman`() {
         val romanNummeral: RomanNummeral = RomanNummeral();
         Assert.assertEquals("V", romanNummeral.convert(arabicNumber = 5))
+    }
+
+    @Test
+    fun `given 6 should return VI in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("VI", romanNummeral.convert(arabicNumber = 6))
+    }
+
+    @Test
+    fun `given 7 should return VII in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("VI", romanNummeral.convert(arabicNumber = 6))
+    }
+
+    @Test
+    fun `given 8 should return VIII in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("VIII", romanNummeral.convert(arabicNumber = 8))
     }
 }
