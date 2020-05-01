@@ -52,4 +52,35 @@ class RomanNumeralsShould {
         val romanNummeral: RomanNummeral = RomanNummeral();
         Assert.assertEquals("VIII", romanNummeral.convert(arabicNumber = 8))
     }
+
+    @Test
+    fun `given 9 should return IX in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("IX", romanNummeral.convert(arabicNumber = 9))
+    }
+
+    @Test
+    fun `given 10 should return X in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("X", romanNummeral.convert(arabicNumber = 10))
+    }
+
+    @Test
+    fun `given 11 should return XI in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("XI", romanNummeral.convert(arabicNumber = 11))
+    }
+
+    @Test
+    fun `given 12 should return XII in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("XII", romanNummeral.convert(arabicNumber = 12))
+    }
+
+    @Test
+    fun `given 43 should return dfsadf in roman`() {
+        val romanNummeral: RomanNummeral = RomanNummeral();
+        Assert.assertEquals("XLIII", romanNummeral.convert(arabicNumber = 43))
+    }
+
 }
